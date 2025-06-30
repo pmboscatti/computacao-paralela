@@ -1,0 +1,38 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.bin
+
+# Shared Libraries / Dynamic Link Libraries
+*.so
+*.dll
+*.dylib
+
+# Static Libraries
+*.a
+*.lib
+
+# Build directories
+build/
+bin/
+obj/
+debug/
+release/
+
+# CUDA specific files
+*.ptx    # PTX assembly files
+*.fatbin # Fat binary files
+*.link.o # Intermediate link object files
+*.exp
+
+# Editor/IDE specific files (common examples)
+.vscode/
+.idea/
+*.swp
+*~
+# Backup files
+*.bak
