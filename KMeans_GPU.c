@@ -161,7 +161,7 @@ void printEPS(observation pts[], size_t len, cluster cent[], int k) {
 }
 
 static void test() {
-    size_t size = 100000L;
+    size_t size = 100000000L;
     observation* observations = (observation*)malloc(sizeof(observation) * size);
     double maxRadius = 20.00;
     double radius = 0;
@@ -177,7 +177,7 @@ static void test() {
     double start_time = omp_get_wtime();
     cluster* clusters = kMeans(observations, size, k);
     double end_time = omp_get_wtime();
-    printEPS(observations, size, clusters, k);
+    // printEPS(observations, size, clusters, k);
 
     printf("Tempo GPU: %.6f segundos\n", end_time - start_time);
 

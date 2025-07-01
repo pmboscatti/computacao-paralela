@@ -206,7 +206,7 @@ void printEPS(observation pts[], size_t len, cluster cent[], int k)
 
 static void test()
 {
-    size_t size = 100000L;
+    size_t size = 100000000L;
     observation* observations =
         (observation*)malloc(sizeof(observation) * size);
     double maxRadius = 20.00;
@@ -240,7 +240,7 @@ static void test()
     cudaEventDestroy(end_time);
     
     // Fora da medição
-    printEPS(observations, size, clusters, k);
+    // printEPS(observations, size, clusters, k);
 
     printf("Tempo CUDA: %.6f segundos\n", tempo_execucao);
 

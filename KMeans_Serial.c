@@ -320,7 +320,7 @@ void printEPS(observation pts[], size_t len, cluster cent[], int k)
  */
 static void test()
 {
-    size_t size = 100000L;
+    size_t size = 100000000L;
     observation *observations =
         (observation *)malloc(sizeof(observation) * size);
     double maxRadius = 20.00;
@@ -338,11 +338,11 @@ static void test()
     clock_t start_time = clock();
     cluster *clusters = kMeans(observations, size, k);
     clock_t end_time = clock();
-    printEPS(observations, size, clusters, k);
+    // printEPS(observations, size, clusters, k);
 
     double tempo_execucao = (double)(end_time - start_time) / CLOCKS_PER_SEC;
 
-    printf("Tempo Serial: %.6f segundos\n", tempo_execucao);
+    // printf("Tempo Serial: %.6f segundos\n", tempo_execucao);
 
     // Free the accquired memory
     free(observations);

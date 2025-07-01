@@ -9,7 +9,7 @@ Este projeto implementa o algoritmo de agrupamento **K-Means** em C/C++, com tr�
 3. **Versão paralela OpenMP com atomics (simulação GPU)**: `KMeans_GPU.c`
 4. **Versão paralela CUDA**: `KMeans_CUDA.cu`
 
-As versões utilizam uma base de 100.000 pontos aleatórios em distribuição circular, agrupados em 5 clusters.
+As versões utilizam uma base de 100.000.000 pontos aleatórios em distribuição circular, agrupados em 5 clusters.
 
 ---
 
@@ -73,7 +73,7 @@ As versões paralelas mostram o tempo total em segundos no final da execução.
 ## Observações
 
 * Para resultados consistentes, execute em máquinas com múltiplos núcleos ou GPUs dedicadas.
-* As versões foram testadas com `k=5` e `100000` pontos.
+* As versões foram testadas com `k=5` e `100000000` pontos.
 
 ---
 
